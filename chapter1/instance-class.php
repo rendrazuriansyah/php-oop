@@ -2,10 +2,14 @@
 class Student {
     // Properties
 }
+
+// masing" student memiliki class yang sama
+$student1 = new Student;
+$student2 = new Student;
+
 $classes = get_declared_classes();
 echo "Classes: ".implode(', ', $classes)."<br>"; 
 echo "<hr>";
-
 
 $classNames = ['Product', 'Student', 'student'];
 foreach ($classNames as $className) {
@@ -15,5 +19,3 @@ foreach ($classNames as $className) {
         echo "{$className} class tidak ada. <br>";
     }
 }
-
-
